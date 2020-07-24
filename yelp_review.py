@@ -16,7 +16,7 @@ soup = BeautifulSoup(r.content , features = 'lxml')
             #'city' : div1.find('div', class_ = 'lemon--div__373c0__1mboc responsive-hidden-small__373c0__2vDff border-color--default__373c0__3-ifU').span.text,
             #'review' : div1.find('p', class_ ='lemon--p__373c0__3Qnnj text__373c0__2Kxyz comment__373c0__3EKjH text-color--normal__373c0__3xep9 text-align--left__373c0__2XGa-').span.text,
         #}
-        #reviewList1.append(rev1,'*')
+        #reviewList1.append(rev1,'*****')
 #print(reviewList1)
 
 csv_file = open('yelp_feedback.csv', 'w')
