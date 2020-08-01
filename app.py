@@ -59,9 +59,3 @@ for index, url in enumerate(url_page_list):
         eachpage_scrape(feedbacks, csv_writer)
         print('Completed page :'+str(index+1))
 
-#feedbacks = soup.find_all('div', class_ = 'lemon--div__373c0__1mboc review__373c0__13kpL sidebarActionsHoverTarget__373c0__2kfhE arrange__373c0__2C9bH gutter-2__373c0__1DiLQ grid__373c0__1Pz7f layout-stack-small__373c0__27wVp border-color--default__373c0__3-ifU')  
-#reviewList= []
-#for feedback in feedbacks:  
-    #rating = feedback.find('span',  class_ = 'lemon--span__373c0__3997G display--inline__373c0__3JqBP border-color--default__373c0__3-ifU').div['aria-label'].split( )[0]
-    #reviewList.append(rating)
-#print(reviewList)  
