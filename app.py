@@ -16,13 +16,12 @@ csv_writer.writerow(headerofcsv)
 
 
 #getting total number of reviews from bar-karaoke-lounge-toronto
-url_for_pages = soup.find('p' , class_ = 'lemon--p__373c0__3Qnnj text__373c0__2Kxyz text-color--mid__373c0__jCeOG text-align--left__373c0__2XGa- text-size--large__373c0__3t60B').text
+url_for_pages = soup.find('div' , class_ = 'lemon--div__373c0__1mboc arrange-unit__373c0__o3tjT border-color--default__373c0__3-ifU nowrap__373c0__35McF').p.text
 total_reveiw= (url_for_pages.split( )[0]) 
 total_reveiw= int(total_reveiw)
 
 #getting url list of each pages.
 url_page_list=[]
-
 #(0,105,20): here 20 is step size, because each page contain 20 reviews only
 for i in range(0,total_reveiw,20): 
     url_page_list.append('https://www.yelp.com/biz/bar-karaoke-lounge-toronto?start='+str(i))
