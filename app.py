@@ -8,7 +8,7 @@ soup = BeautifulSoup(r.content , features = 'lxml')
 #print(soup)
 
 #creating csv file to store data
-csv_file = open('yelp_feedback.csv', 'w')
+csv_file = open('yelp_feedback.csv', 'w',encoding='utf-8')
 csv_writer = csv.writer(csv_file)
 headerofcsv= ['User','Date','City','Rating','Review']
 #headerofcsv= ['Rating']
