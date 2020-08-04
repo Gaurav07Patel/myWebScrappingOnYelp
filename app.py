@@ -2,13 +2,14 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 from random import randint
+import re
  
 r = requests.get('https://www.yelp.com/biz/bar-karaoke-lounge-toronto')
 soup = BeautifulSoup(r.content , features = 'lxml')
 #print(soup)
 
 #creating csv file to store data
-csv_file = open('yelp_feedback.csv', 'w',encoding='utf-8')
+csv_file = open('yelp_feedback.csv', 'w',encoding ='utf-8',newline='')
 csv_writer = csv.writer(csv_file)
 headerofcsv= ['User','Date','City','Rating','Review']
 #headerofcsv= ['Rating']
