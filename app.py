@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 from random import randint
-import re
+
  
 r = requests.get('https://www.yelp.com/biz/bar-karaoke-lounge-toronto')
 soup = BeautifulSoup(r.content , features = 'lxml')
